@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face{
+  font-family: anz;
+  src: url(./assets/file.woff2);
+}
+@font-face{
+  font-family: anz1;
+  src: url(./assets/file1.woff2);
+}
+@font-face{
+  font-family: anz2;
+  src: url(./assets/file2.woff2);
+}
+@font-face{
+  font-family: anz3;
+  src: url(./assets/file3.woff2);
+}
+@font-face{
+  font-family: anz4;
+  src: url(./assets/file4.woff2);
+}
+@font-face{
+  font-family: otherAnz;
+  src: url(./assets/madefor-text.var.original.woff2);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+html, body{
+  height: 100%;
+  width: 100%;
+  background-color: #111;
+}
+#tilt-main{
+  position: relative;
+  perspective: 1000px;
+}
+#section2{
+  position: relative;
+  perspective: 2000px;
+}
+#tiltDiv{
+  width: fit-content;
+  transform: rotateX(50deg);
+}
+#header{
+  pointer-events: none;
+}
+#header-btn{
+  pointer-events: all;
+  cursor: pointer;
+}
+#header-menu{
+  pointer-events: all;
+}
+.rotateText{
+  transform-origin: 100% 70%;
+}
+.textAni{
+  transform-origin: 100% 70%;
+}
+#section6{
+  position: relative;
+  perspective: 2000px;
+}
+::selection{
+  color: white;
+  background-color: black;
+}
